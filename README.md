@@ -31,7 +31,7 @@ Antes de comenzar, asegúrate de tener instalado:
   - [iOS App Store](https://apps.apple.com/app/expo-go/id982107779)
   - [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
 
-### Para desarrollo nativo (opcional):
+### Para desarrollo nativo (opcional)
 
 - **Xcode** (para iOS, solo en macOS)
 - **Android Studio** (para Android)
@@ -69,7 +69,7 @@ npx expo start
 
 Esto iniciará Metro Bundler y mostrará un código QR en la terminal.
 
-### Opciones de ejecución:
+### Opciones de ejecución
 
 #### 📱 En dispositivo físico (método recomendado para comenzar)
 
@@ -121,19 +121,22 @@ La aplicación cuenta con dos pestañas principales:
 
 La aplicación **sigue automáticamente** el tema de tu dispositivo (claro u oscuro). Para cambiar el modo:
 
-#### En iOS:
+#### En iOS
+
 1. Abre **Ajustes** → **Pantalla y brillo**
 2. Selecciona:
    - **Claro** para modo claro
    - **Oscuro** para modo oscuro
    - **Automático** para que cambie según la hora del día
 
-#### En Android:
+#### En Android
+
 1. Abre **Configuración** → **Pantalla**
 2. Busca **Tema oscuro** o **Modo oscuro**
 3. Activa o desactiva el interruptor
 
-#### En navegador web:
+#### En navegador web
+
 - El modo se adapta automáticamente a la preferencia de tu sistema operativo
 - En macOS: **Preferencias del Sistema** → **General** → **Apariencia**
 - En Windows: **Configuración** → **Personalización** → **Colores** → **Elige tu color**
