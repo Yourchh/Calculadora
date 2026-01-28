@@ -183,7 +183,7 @@ export const ScientificCalculator: React.FC<ScientificCalculatorProps> = ({
       {
         label: "0",
         onPress: () => onAppendNumber("0"),
-        style: styles.buttonWide,
+        style: styles.button,
       },
       { label: ".", onPress: () => onAppendNumber("."), style: styles.button },
       { label: "%", onPress: onPercentage, style: styles.button },
