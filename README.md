@@ -117,6 +117,29 @@ La aplicación cuenta con dos pestañas principales:
 1. **Calculadora** (pestaña principal): Interfaz de la calculadora
 2. **Explorar**: Información adicional y recursos
 
+### 🌓 Cambiar entre Modo Claro y Oscuro
+
+La aplicación **sigue automáticamente** el tema de tu dispositivo (claro u oscuro). Para cambiar el modo:
+
+#### En iOS:
+1. Abre **Ajustes** → **Pantalla y brillo**
+2. Selecciona:
+   - **Claro** para modo claro
+   - **Oscuro** para modo oscuro
+   - **Automático** para que cambie según la hora del día
+
+#### En Android:
+1. Abre **Configuración** → **Pantalla**
+2. Busca **Tema oscuro** o **Modo oscuro**
+3. Activa o desactiva el interruptor
+
+#### En navegador web:
+- El modo se adapta automáticamente a la preferencia de tu sistema operativo
+- En macOS: **Preferencias del Sistema** → **General** → **Apariencia**
+- En Windows: **Configuración** → **Personalización** → **Colores** → **Elige tu color**
+
+La app detectará el cambio inmediatamente y actualizará su apariencia.
+
 ### Modo Calculadora
 
 #### 🔄 Cambiar entre modo Básico y Científico
