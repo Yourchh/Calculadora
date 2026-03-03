@@ -3,7 +3,7 @@ pipeline {
     
     tools {
         // Asegúrate de que este nombre coincida con "Manage Jenkins" -> "Global Tool Configuration"
-        nodejs 'NodeJS 24' 
+        nodejs 'nodejs' 
     }
     
     environment {
