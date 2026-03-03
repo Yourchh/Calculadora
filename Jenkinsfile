@@ -26,17 +26,17 @@ pipeline {
         }
 
         stage('SonarQube Analysis') {
-            steps {
-                // 'SonarQube' es el nombre del servidor en "Configure System"
-                withSonarQubeEnv('SonarQube') {
-                    script {
-                        // 'SonarQube Scanner' es el nombre en Global Tool Configuration
-                        def scannerHome = tool name: 'SonarQube Scanner'
-                        sh "${scannerHome}/bin/sonar-scanner"
-                    }
-                }
+    steps {
+        withSonarQubeEnv('SonarQube') {
+            script {
+                // Cambiamos 'SonarQube Scanner' por 'sonar-scanner'
+                // para que coincida con tu captura image_b55d26.jpg
+                def scannerHome = tool name: 'sonar-scanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+                sh "${scannerHome}/bin/sonar-scanner"
             }
         }
+    }
+}
 
         stage('Quality Gate') {
             steps {
