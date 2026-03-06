@@ -9,7 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "test": "vitest --coverage --reporter=junit --outputFile=junit.xml",
+    "test": "vitest --coverage --reporter=junit --outputFile=junit.xml --reporter=lcov",
     "build": "expo export"
   },
   "dependencies": {
