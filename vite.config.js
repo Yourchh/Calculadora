@@ -6,7 +6,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    // Usamos './' para asegurar que busque en la raíz del espacio de trabajo
+    // Usamos './' para forzar la búsqueda en la raíz actual
     setupFiles: ['./setupTests.js'], 
     include: ['__tests__/**/*.{test,spec}.{js,jsx,ts,tsx}'],
     coverage: {
