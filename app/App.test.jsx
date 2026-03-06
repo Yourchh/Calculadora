@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render } from "@testing-library/react-native";
 import { vi, expect, test } from 'vitest';
 import Index from './(tabs)/index'; // Ruta correcta según tu estructura
 
