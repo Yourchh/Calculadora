@@ -95,9 +95,15 @@ pipeline {
     }
     
     post {
-        always {
-            // Limpia el espacio de trabajo del contenedor al finalizar
-            cleanWs()
+    always {
+        script {
+            // Solo intenta grabar resultados si el archivo realmente se creó
+            if (fileExists('junit.xml')) {
+                junit 'junit.xml'
+            } else {
+                echo "Advertencia: junit.xml no encontrado. ¿Pasaron las pruebas?"
+            }
         }
     }
+}
 }
