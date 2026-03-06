@@ -37,21 +37,14 @@ pipeline {
         stage('Run Tests with Coverage') {
     steps {
         script {
-            // El "|| true" permite que el pipeline siga aunque no encuentre tests,
-            // permitiendo que lleguemos a SonarQube y el Build.
-            sh 'npm run test || true'
+            // El status true permite que el pipeline no se detenga aquí
+            sh 'npm run test || true' 
         }
     }
     post {
-        always {
-            script {
-                // Solo intenta grabar resultados si el archivo realmente se creó
-                if (fileExists('junit.xml')) {
-                    junit 'junit.xml'
-                } else {
-                    echo "Advertencia: junit.xml no encontrado."
-                }
-            }
+        success {
+            // Solo registra si todo salió bien para evitar ruidos en el log
+            junit 'junit.xml'
         }
     }
 }
