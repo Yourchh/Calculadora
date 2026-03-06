@@ -49,6 +49,7 @@
     "eslint-config-expo": "~10.0.0",
     "eslint-plugin-vitest-globals": "^1.5.0",
     "jsdom": "^28.1.0",
+    "react-test-renderer": "^19.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.18"
   },

@@ -3,6 +3,14 @@
 # dependencies
 node_modules/
 
+# Jenkins & Testing
+node_modules/
+.scannerwork/
+coverage/
+junit.xml
+dist/
+__tests__/
+
 # Expo
 .expo/
 dist/
