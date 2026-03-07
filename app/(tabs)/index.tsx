@@ -1,10 +1,9 @@
-import { useState } from 'react';
-import { StyleSheet, Switch, View } from 'react-native';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { BasicCalculator } from '@/components/basic-calculator';
-import { ScientificCalculator } from '@/components/scientific-calculator';
-import { useCalculator } from '@/hooks/use-calculator';
+import { BasicCalculator } from "@/components/basic-calculator";
+import { ScientificCalculator } from "@/components/scientific-calculator";
+import { ThemedView } from "@/components/themed-view";
+import { useCalculator } from "@/hooks/use-calculator";
+import { useState } from "react";
+import { StyleSheet } from "react-native";
 
 export default function HomeScreen() {
   const [isScientific, setIsScientific] = useState(false);
